@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Seu Nome</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+  <div class="foto-container">
+    <img src="C:\Users\guilh\OneDrive\Desktop\meu-site\foto perfil social.jpg" alt="Sua Foto">
+    <h1 class="nome">Guilherme audi</h1> <!-- Altere para seu nome -->
+  </div>
+</aside>
+
+    <main class="conteudo">
+    <button id="lang-toggle" class="lang-btn">English</button>
+      <button class="toggle-btn" onclick="toggleSection('sobre')">Sobre</button>
+      <div id="sobre" class="hidden">
+        <p>Sou uma pessoa apaixonada por tecnologia e dados...</p>
+      </div>
+
+
+      <button class="toggle-btn" onclick="toggleSection('bi')">Projetos em Power BI</button>
+      <div id="bi" class="hidden">
+        <p>Aqui estão alguns dashboards que construí usando Power BI...</p>
+      </div>
+
+      <button class="toggle-btn" onclick="toggleSection('python')">Projetos em Python</button>
+      <div id="python" class="hidden">
+        <p>Projetos de análise de dados, automações e visualizações com Python.</p>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    function toggleSection(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>
+
